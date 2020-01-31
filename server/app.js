@@ -9,10 +9,12 @@ app.listen(5000, () => {
     console.log("Now listening on port 5000...");
 });
 
+const raw_sample_json = require('./sample-menu.json');
+
 app.get("/", (req, res) => {
     res.send("home");
 })
 
 app.get("/meals", (req, res) => {
-    res.send("success");
+    res.send(raw_sample_json);
 })
