@@ -1,0 +1,27 @@
+{
+  "name": "dining_app",
+  "version": "1.0.0",
+  "description": "server for dining app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_dining_app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chsu1r/dining-app.git"
+  },
+  "keywords": [
+    "dining"
+  ],
+  "author": "Claire Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chsu1r/dining-app/issues"
+  },
+  "homepage": "https://github.com/chsu1r/dining-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2"
+  }
+}
