@@ -18,7 +18,7 @@ class DiningMenuComponent extends React.Component {
             sections.push(<DiningHallComponent key={place.id} name={place.name} payment_types={place.payment} meals={place.meals_by_day[0].meals} />);
             });
         console.log(sections)
-        return <div className="dining-menu">
+        return <div id="menu-section" className="dining-menu">
             {sections}
         </div>
     };
