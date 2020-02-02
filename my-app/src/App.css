@@ -42,10 +42,14 @@
 }
 .dining-hall {
   margin: 5px auto;
-  width: 70%;
+  width: 90%;
   background-color: white;
   align-content: center;
   padding:3px;
+}
+
+.meal-item-list {
+  column-count: 2;
 }
 
 .dining-hall-meals {
@@ -57,4 +61,14 @@
   width: 90%;
   height: auto;
   align-content: center;
+}
+
+.meal-item {
+  margin-top: 5px;
+}
+
+.dietary-flag-box {
+  margin: 2px;
+  background-color: #61dafb;
+  padding: 2px;
 }

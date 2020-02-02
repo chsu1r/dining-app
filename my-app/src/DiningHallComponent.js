@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import DiningMealComponent from './DiningMealComponent';
 
 class DiningHallComponent extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ class DiningHallComponent extends React.Component {
         return <div className="card text-center dining-hall"> 
         <div className="card-header" id={this.props.name + "_header"}><button className="btn btn-link" onClick={this.onClick}><h5 className="card-title">{this.props.name}</h5></button></div>
             {this.state.toggled ? <div className="card-body dining-hall-meals">{this.props.meals.map((meal) =>
-            <div className="dining-hall-meal"> <p className="card-text">{meal.name}</p> </div>)}
+            <div className="dining-hall-meal"> <DiningMealComponent key={this.props.name + "_" + meal.name} name={meal.name} items={meal.items} /> </div>)}
         </div> : null }</div>
     };
 
